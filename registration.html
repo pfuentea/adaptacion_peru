@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <div class="nav-section logo">
+      <img src="./images/fingerprint.png" alt="Adapt Perú Logo" />
+    </div>
+    <div class="nav-section center">
+      <div class="title">Adapt Perú</div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">¿Qué hacemos?</a></li>
+        <li><a href="#">Participantes</a></li>
+          <li>
+              <a href="#">Servicios</a>
+              <ul class="dropdown-menu">
+                  <li><a href="consultasysurgerencias.html">Consultas & Sugerencias</a></li>
+                  <li><a href="cajade.html">Caja de Herramientas</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+      </ul>
+        
+      </div>
+    </div>
+    <div class="nav-section right">
+      <img
+        src="./images/Rectangle.png"
+        alt="Government Logo"
+        class="gov-logo"
+      />
+      
+      <div class="right-buttons">
+        <a href="loginpage.html" class="nav-link" style="text-decoration: none;">Iniciar Sesión</a>
+       <a href="registration.html" style="text-decoration: none;"><button class="nav-button">Regístrate</button></a> 
+      </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+    <!---formsection start--->
+
+    <div class="Registrationform">
+      <div class="contanier-for-registration">
+        <div class="main-headings">
+          <h1>Inscríbete</h1>
+          <p class="subtitle">Únete a Adapt <br />Perú</p>
+        </div>
+        <form action="#" method="POST">
+          <h2>Identifique a su organización</h2>
+          <div class="form-section1">
+            <label for="ruc" >R.U.C:</label>
+            <input type="text" id="ruc" name="ruc" />
+  
+            <label for="socialReason">Razón Social:</label>
+            <input type="text" id="socialReason" name="socialReason" />
+  
+            <label for="activityDescription">Descripción de actividades:</label>
+            <textarea
+              id="activityDescription"
+              name="activityDescription"
+            ></textarea>
+            
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" />
+          </div>
+          <h2>
+            Seleccione la clasificación CIIU de la actividad económica principal
+            de su organización:
+          </h2>
+          <div class="classification-container">
+            <div class="dropdown-group">
+              <label for="section">Sección</label>
+              <select id="section" name="section">
+                <option>Seleccionar</option>
+                <!-- Additional options -->
+              </select>
+            </div>
+  
+            <div class="dropdown-group">
+              <label for="division">División</label>
+              <select id="division" name="division">
+                <option>Seleccionar</option>
+                <!-- Additional options -->
+              </select>
+            </div>
+  
+            <div class="dropdown-group">
+              <label for="group">Grupo</label>
+              <select id="group" name="group">
+                <option>Seleccionar</option>
+                <!-- Additional options -->
+              </select>
+            </div>
+  
+            <div class="dropdown-group">
+              <label for="class">Clase</label>
+              <select id="class" name="class">
+                <option>Seleccionar</option>
+                
+              </select>
+            </div>
+          </div>
+  
+          <h2>
+            Indique los datos del/la coordinador/a de la Gestión de Emisiones de
+            GEI de su organización:
+          </h2>
+          <div class="form-section-emissions">
+            <div>
+              <div class="field-group">
+                <label for="names">Nombres</label>
+                <input type="text" id="names" name="names" />
+              </div>
+              <div class="field-group">
+                <label for="surnames">Apellidos</label>
+                <input type="text" id="surnames" name="surnames" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="email-phone-group">
+                <label for="email" class="lable1">Correo electrónico</label>
+                <input type="email" id="email" name="email" />
+                <label for="phone">Teléfono</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+            </div>
+  
+            <div class="terms-section">
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms"
+                >Acepto los términos y condiciones de la plataforma</label
+              >
+              <a href="#" class="terms-link">Ver términos y condiciones</a>
+            </div>
+          </div>
+            <div  class="formbtn">
+              <button  type="submit" >Enviar solicitud</button>
+            </div>
+          
+        </form>
+       <!--<svg
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14m0 0l-6-6m6 6l-6 6"
+            stroke="#4E88F9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>--> 
+      </div>
+      
+    </div>
+
+    <!---formsection end--->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="top-row">
+            <img src="./images/footerprint.png" alt="Adapt Perú Logo" />
+            <h6>Adapt Perú</h6>
+          </div>
+          <div>
+            <img
+              class="sec-logo"
+              src="./images/govt-logo.png"
+              alt="Ministerio del Ambiente Logo"
+            />
+            <p>
+              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit..."
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Landings</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Empresas</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

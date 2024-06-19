@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre Empresa</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <div class="nav-section logo">
+      <img src="./images/fingerprint.png" alt="Adapt Perú Logo" />
+    </div>
+    <div class="nav-section center">
+      <div class="title">Adapt Perú</div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">¿Qué hacemos?</a></li>
+        <li><a href="#">Participantes</a></li>
+          <li>
+              <a href="#">Servicios</a>
+              <ul class="dropdown-menu">
+                  <li><a href="consultasysurgerencias.html">Consultas & Sugerencias</a></li>
+                  <li><a href="cajade.html">Caja de Herramientas</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+      </ul>
+        
+      </div>
+    </div>
+    <div class="nav-section right">
+      <img
+        src="./images/Rectangle.png"
+        alt="Government Logo"
+        class="gov-logo"
+      />
+      
+      <div class="right-buttons">
+        <a href="loginpage.html" class="nav-link" style="text-decoration: none;">Iniciar Sesión</a>
+       <a href="registration.html" style="text-decoration: none;"><button class="nav-button">Regístrate</button></a> 
+      </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+    <div class="nombre container">
+      <h1>Nombre Empresa</h1>
+      <h4>Hola, Nombre Admin</h4>
+      <div class="button-container">
+        <h4>Panel de Control</h4>
+        <a href=""><button class="add-sede-button">+ Añadir Sede</button></a>
+      </div>
+      <div class="box1 control-panel">
+        <div class="row heading">
+          <div class="cell">Sede</div>
+          <div class="cell">Usuario</div>
+          <div class="cell">Etapa</div>
+        </div>
+        <div class="row nombrelink">
+          <div class="cell cell1"><a href="sede.html" style="text-decoration: none;  color: #027def;">Sede 1</a></div>
+          <div class="cell">Usuario 1</div>
+          <div class="cell ">Implementación (2)</div>
+        </div>
+        <div class="row">
+          <div class="cell">Sede 2</div>
+          <div class="cell">Usuario 2</div>
+          <div class="cell">Identificación (1)</div>
+        </div>
+        <div class="row">
+          <div class="cell">Sede 3</div>
+          <div class="cell">Usuario 3</div>
+          <div class="cell">Identificación (1)</div>
+        </div>
+      </div>
+
+      <div class="box2 register-sede" id="register-sede-box" style="display:none;">
+        <h3>Registrar Sede</h3>
+        <form >
+          <label for="direccions">Dirección</label>
+          <input type="text" id="direccions" name="direccion" />
+          <label for="provincia">Provincia</label>
+          <input type="text" id="provincia" name="provincia" />
+          <label for="dpto">Dpto</label>
+          <input type="text" id="dpto" name="dpto" />
+          <label for="distrito">Distrito</label>
+          <input type="text" id="distrito" name="distrito" />
+          <label for="nombre-sede">Nombre Sede</label>
+          <input type="text" id="nombre-sede" name="nombre-sede" />
+          <label for="usuario-sede">Usuario Sede</label>
+          <input type="text" id="usuario-sede" name="usuario-sede" />
+        </form>
+        <button type="submit">Registrar Sede</button>
+      </div>
+      <!--
+      <div class="endarrownombre">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 12h14m0 0l-6-6m6 6l-6 6"
+            stroke="#4E88F9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>-->
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="top-row">
+            <img src="./images/footerprint.png" alt="Adapt Perú Logo" />
+            <h6>Adapt Perú</h6>
+          </div>
+          <div>
+            <img
+              class="sec-logo"
+              src="./images/govt-logo.png"
+              alt="Ministerio del Ambiente Logo"
+            />
+            <p>
+              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit..."
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Landings</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Empresas</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const addButton = document.querySelector('.add-sede-button');
+          const registerBox = document.getElementById('register-sede-box');
+  
+          addButton.addEventListener('click', function(event) {
+              event.preventDefault();
+              if (registerBox.style.display === 'none') {
+                  registerBox.style.display = 'block';
+              } else {
+                  registerBox.style.display = 'none';
+              }
+          });
+      });
+  </script>
+  </body>
+</html>

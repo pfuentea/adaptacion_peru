@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultas y Sugerencias</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="consultas">
+      <div class="">
+        <h1>Consultas y Sugerencias</h1>
+      </div>
+      <div class="consultasy ">
+        <form action="/submit-form" method="POST" class="consultasyform">
+          <div class="input-group">
+            <label for="name">Nombre y apellido</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group text-area-field">
+            <label for="comments">Comentarios</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="8"
+              required
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="consultasbtn">
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="top-row">
+            <img src="./images/footerprint.png" alt="Adapt Perú Logo" />
+            <h6>Adapt Perú</h6>
+          </div>
+          <div>
+            <img
+              class="sec-logo"
+              src="./images/govt-logo.png"
+              alt="Ministerio del Ambiente Logo"
+            />
+            <p>
+              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit..."
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Landings</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Empresas</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reconocimiento</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
